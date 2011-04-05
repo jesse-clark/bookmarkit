@@ -1,0 +1,166 @@
+<html>
+<head>
+<title>File Source for layout.phtml</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">bookmarkit</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                              		  [ <a href="../classtrees_bookmarkit.html" class="menu">class tree: bookmarkit</a> ]
+		  [ <a href="../elementindex_bookmarkit.html" class="menu">index: bookmarkit</a> ]
+		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../li_bookmarkit.html">bookmarkit</a><br />
+            <br /><br />
+                  
+      
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1 align="center">Source for file layout.phtml</h1>
+<p>Documentation is available at <a href="../bookmarkit/_layouts---scripts---layout.phtml.html">layout.phtml</a></p>
+<div class="src-code">
+<ol><li><div class="src-line"><a name="a1"></a><span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a2"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a3"></a><span class="src-doc">&nbsp;*&nbsp;Purpose:&nbsp;layout&nbsp;for&nbsp;webpages,&nbsp;based&nbsp;off&nbsp;of&nbsp;html5boilerplate.com</span></div></li>
+<li><div class="src-line"><a name="a4"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a5"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@copyright</span><span class="src-doc">&nbsp;Jesse&nbsp;Clark&nbsp;2010</span></div></li>
+<li><div class="src-line"><a name="a6"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@author</span><span class="src-doc">&nbsp;Jesse&nbsp;Clark&nbsp;&lt;mail@jesseclark.me&gt;</span></div></li>
+<li><div class="src-line"><a name="a7"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@version</span><span class="src-doc">&nbsp;1.0</span></div></li>
+<li><div class="src-line"><a name="a8"></a><span class="src-doc">&nbsp;*/&nbsp;&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a9"></a><span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">headTitle</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><span class="src-id">setSeparator</span><span class="src-sym">(</span><span class="src-str">'&nbsp;-&nbsp;'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a10"></a><span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">headTitle</span><span class="src-sym">(</span><span class="src-str">'Bookmarks'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a11"></a><span class="src-php">?&gt;</span></div></li>
+<li><div class="src-line"><a name="a12"></a>&lt;!doctype&nbsp;html&gt;&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a13"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a14"></a>&lt;!--&nbsp;paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/&nbsp;--&gt;&nbsp;</div></li>
+<li><div class="src-line"><a name="a15"></a>&lt;!--[if&nbsp;lt&nbsp;IE&nbsp;7&nbsp;]&gt;&nbsp;&lt;html&nbsp;lang=&quot;en&quot;&nbsp;class=&quot;no-js&nbsp;ie6&quot;&gt;&nbsp;&lt;![endif]--&gt;</div></li>
+<li><div class="src-line"><a name="a16"></a>&lt;!--[if&nbsp;IE&nbsp;7&nbsp;]&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;html&nbsp;lang=&quot;en&quot;&nbsp;class=&quot;no-js&nbsp;ie7&quot;&gt;&nbsp;&lt;![endif]--&gt;</div></li>
+<li><div class="src-line"><a name="a17"></a>&lt;!--[if&nbsp;IE&nbsp;8&nbsp;]&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;html&nbsp;lang=&quot;en&quot;&nbsp;class=&quot;no-js&nbsp;ie8&quot;&gt;&nbsp;&lt;![endif]--&gt;</div></li>
+<li><div class="src-line"><a name="a18"></a>&lt;!--[if&nbsp;IE&nbsp;9&nbsp;]&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;html&nbsp;lang=&quot;en&quot;&nbsp;class=&quot;no-js&nbsp;ie9&quot;&gt;&nbsp;&lt;![endif]--&gt;</div></li>
+<li><div class="src-line"><a name="a19"></a>&lt;!--[if&nbsp;(gt&nbsp;IE&nbsp;9)|!(IE)]&gt;&lt;!--&gt;&nbsp;&lt;html&nbsp;lang=&quot;en&quot;&nbsp;class=&quot;no-js&quot;&gt;&nbsp;&lt;!--&lt;![endif]--&gt;&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a20"></a>&lt;head&gt;</div></li>
+<li><div class="src-line"><a name="a21"></a>&nbsp;&nbsp;&lt;meta&nbsp;charset=&quot;utf-8&quot;&gt;</div></li>
+<li><div class="src-line"><a name="a22"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a23"></a>&nbsp;&nbsp;&lt;meta&nbsp;http-equiv=&quot;X-UA-Compatible&quot;&nbsp;content=&quot;IE=edge,chrome=1&quot;&gt;</div></li>
+<li><div class="src-line"><a name="a24"></a>&nbsp;&nbsp;&lt;!--&nbsp;&lt;title&gt;&lt;/title&gt;&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a25"></a>&nbsp;&nbsp;<span class="src-php">&lt;?php&nbsp;</span>echo&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">headTitle</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-php">?&gt;&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a26"></a>&nbsp;&nbsp;&lt;meta&nbsp;name=&quot;description&quot;&nbsp;content=&quot;a&nbsp;bookmark&nbsp;tool&quot;&gt;</div></li>
+<li><div class="src-line"><a name="a27"></a>&nbsp;&nbsp;&lt;meta&nbsp;name=&quot;author&quot;&nbsp;content=&quot;Jesse&nbsp;Clark&quot;&gt;</div></li>
+<li><div class="src-line"><a name="a28"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a29"></a>&nbsp;&nbsp;&lt;!--&nbsp;&nbsp;Mobile&nbsp;viewport&nbsp;optimized:&nbsp;j.mp/bplateviewport&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a30"></a>&nbsp;&nbsp;&lt;meta&nbsp;name=&quot;viewport&quot;&nbsp;content=&quot;width=device-width,&nbsp;initial-scale=1.0&quot;&gt;</div></li>
+<li><div class="src-line"><a name="a31"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a32"></a>&nbsp;&nbsp;&lt;!--&nbsp;Place&nbsp;favicon.ico&nbsp;&amp;&nbsp;apple-touch-icon.png&nbsp;in&nbsp;the&nbsp;root&nbsp;of&nbsp;your&nbsp;domain&nbsp;and&nbsp;delete&nbsp;these&nbsp;references&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a33"></a>&nbsp;&nbsp;&lt;link&nbsp;rel=&quot;shortcut&nbsp;icon&quot;&nbsp;href=&quot;/favicon.ico&quot;&gt;</div></li>
+<li><div class="src-line"><a name="a34"></a>&nbsp;&nbsp;&lt;link&nbsp;rel=&quot;apple-touch-icon&quot;&nbsp;href=&quot;/apple-touch-icon.png&quot;&gt;</div></li>
+<li><div class="src-line"><a name="a35"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a36"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a37"></a>&nbsp;&nbsp;&lt;!--&nbsp;CSS&nbsp;:&nbsp;implied&nbsp;media=&quot;all&quot;&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a38"></a>&nbsp;&nbsp;&lt;!--&nbsp;&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;href=&quot;css/style.css?v=2&quot;&gt;&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a39"></a>&nbsp;&nbsp;<span class="src-php">&lt;?php&nbsp;</span>echo&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">headLink</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><span class="src-id">prependStylesheet</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">baseUrl</span><span class="src-sym">(</span><span class="src-sym">)</span>.<span class="src-str">'/css/site.css'</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-php">?&gt;</span></div></li>
+<li><div class="src-line"><a name="a40"></a>&nbsp;&nbsp;&lt;link&nbsp;&nbsp;href=&quot;//fonts.googleapis.com/css?family=Lobster:regular&quot;&nbsp;rel=&quot;stylesheet&quot;&nbsp;type=&quot;text/css&quot;&nbsp;&gt;</div></li>
+<li><div class="src-line"><a name="a41"></a>&nbsp;&nbsp;&lt;!--&nbsp;Uncomment&nbsp;if&nbsp;you&nbsp;are&nbsp;specifically&nbsp;targeting&nbsp;less&nbsp;enabled&nbsp;mobile&nbsp;browsers</div></li>
+<li><div class="src-line"><a name="a42"></a>&nbsp;&nbsp;&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;media=&quot;handheld&quot;&nbsp;href=&quot;css/handheld.css?v=2&quot;&gt;&nbsp;&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a43"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a44"></a>&nbsp;&nbsp;&lt;!--&nbsp;All&nbsp;JavaScript&nbsp;at&nbsp;the&nbsp;bottom,&nbsp;except&nbsp;for&nbsp;Modernizr&nbsp;which&nbsp;enables&nbsp;HTML5&nbsp;elements&nbsp;&amp;&nbsp;feature&nbsp;detects&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a45"></a>&nbsp;&nbsp;&lt;script&nbsp;src=&quot;js/libs/modernizr-1.6.min.js&quot;&gt;&lt;/script&gt;</div></li>
+<li><div class="src-line"><a name="a46"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a47"></a>&lt;/head&gt;&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a48"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a49"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a50"></a>&lt;body&gt;</div></li>
+<li><div class="src-line"><a name="a51"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a52"></a>&nbsp;&nbsp;&lt;div&nbsp;id=&quot;container&quot;&gt;</div></li>
+<li><div class="src-line"><a name="a53"></a>&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt;</div></li>
+<li><div class="src-line"><a name="a54"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;</div></li>
+<li><div class="src-line"><a name="a55"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;id='c1'&gt;Book&lt;div&nbsp;id='c2'&gt;mark&lt;/div&gt;&lt;div&nbsp;id='c3'&gt;it&lt;/div&gt;&lt;div&nbsp;id='c4'&gt;!&lt;/div&gt;&lt;/div&gt;</div></li>
+<li><div class="src-line"><a name="a56"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;id='c1'&gt;<span class="src-php">&lt;?php&nbsp;</span>echo&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">escape</span><span class="src-sym">(</span><span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">title</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-php">?&gt;</span>&lt;/div&gt;</div></li>
+<li><div class="src-line"><a name="a57"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h6&gt;</div></li>
+<li><div class="src-line"><a name="a58"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-php">&lt;?php&nbsp;</span>echo&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">loggedInAs</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-php">?&gt;</span></div></li>
+<li><div class="src-line"><a name="a59"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a60"></a>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/header&gt;</div></li>
+<li><div class="src-line"><a name="a61"></a>&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a62"></a>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;id=&quot;main&quot;&gt;</div></li>
+<li><div class="src-line"><a name="a63"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-php">&lt;?php&nbsp;</span>echo&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">layout</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><span class="src-id">content</span><span class="src-sym">;</span><span class="src-php">?&gt;&nbsp;&nbsp;&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a64"></a>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</div></li>
+<li><div class="src-line"><a name="a65"></a>&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a66"></a>&nbsp;&nbsp;&nbsp;&nbsp;&lt;footer&gt;</div></li>
+<li><div class="src-line"><a name="a67"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;br&nbsp;/&gt;</div></li>
+<li><div class="src-line"><a name="a68"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright&nbsp;2010&nbsp;Jesse&nbsp;Clark</div></li>
+<li><div class="src-line"><a name="a69"></a>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/footer&gt;</div></li>
+<li><div class="src-line"><a name="a70"></a>&nbsp;&nbsp;&lt;/div&gt;&nbsp;&lt;!--!&nbsp;end&nbsp;of&nbsp;#container&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a71"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a72"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a73"></a>&nbsp;&nbsp;&lt;!--&nbsp;Javascript&nbsp;at&nbsp;the&nbsp;bottom&nbsp;for&nbsp;fast&nbsp;page&nbsp;loading&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a74"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a75"></a>&nbsp;&nbsp;&lt;!--&nbsp;Grab&nbsp;Google&nbsp;CDN's&nbsp;jQuery.&nbsp;fall&nbsp;back&nbsp;to&nbsp;local&nbsp;if&nbsp;necessary&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a76"></a>&nbsp;&nbsp;&lt;!--&nbsp;&lt;script&nbsp;src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js&quot;&gt;&lt;/script&gt;&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a77"></a>&nbsp;&nbsp;&lt;!--&nbsp;&lt;script&gt;!window.jQuery&nbsp;&amp;&amp;&nbsp;document.write(unescape('%3Cscript&nbsp;src=&quot;js/libs/jquery-1.4.2.js&quot;%3E%3C/script%3E'))&lt;/script&gt;&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a78"></a>&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a79"></a>&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a80"></a>&nbsp;&nbsp;&lt;!--&nbsp;scripts&nbsp;concatenated&nbsp;and&nbsp;minified&nbsp;via&nbsp;ant&nbsp;build&nbsp;script--&gt;</div></li>
+<li><div class="src-line"><a name="a81"></a>&nbsp;&nbsp;&lt;!--&nbsp;&lt;script&nbsp;src=&quot;js/plugins.js&quot;&gt;&lt;/script&gt;&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a82"></a>&nbsp;&nbsp;&lt;!--&nbsp;&lt;script&nbsp;src=&quot;js/script.js&quot;&gt;&lt;/script&gt;&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a83"></a>&nbsp;&nbsp;&lt;!--&nbsp;end&nbsp;concatenated&nbsp;and&nbsp;minified&nbsp;scripts--&gt;</div></li>
+<li><div class="src-line"><a name="a84"></a>&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a85"></a>&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a86"></a>&nbsp;&nbsp;&lt;!--[if&nbsp;lt&nbsp;IE&nbsp;7&nbsp;]&gt;</div></li>
+<li><div class="src-line"><a name="a87"></a>&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&nbsp;src=&quot;js/libs/dd_belatedpng.js&quot;&gt;&lt;/script&gt;</div></li>
+<li><div class="src-line"><a name="a88"></a>&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;&nbsp;DD_belatedPNG.fix('img,&nbsp;.png_bg');&nbsp;//fix&nbsp;any&nbsp;&lt;img&gt;&nbsp;or&nbsp;.png_bg&nbsp;background-images&nbsp;&lt;/script&gt;</div></li>
+<li><div class="src-line"><a name="a89"></a>&nbsp;&nbsp;&lt;![endif]--&gt;</div></li>
+<li><div class="src-line"><a name="a90"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a91"></a>&nbsp;&nbsp;&lt;!--&nbsp;yui&nbsp;profiler&nbsp;and&nbsp;profileviewer&nbsp;-&nbsp;remove&nbsp;for&nbsp;production&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a92"></a>&nbsp;&nbsp;&lt;!--&nbsp;&lt;script&nbsp;src=&quot;js/profiling/yahoo-profiling.min.js&quot;&gt;&lt;/script&gt;&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a93"></a>&nbsp;&nbsp;&lt;!--&nbsp;&lt;script&nbsp;src=&quot;js/profiling/config.js&quot;&gt;&lt;/script&gt;&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a94"></a>&nbsp;&nbsp;&lt;!--&nbsp;end&nbsp;profiling&nbsp;code&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a95"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a96"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a97"></a>&nbsp;&nbsp;&lt;!--&nbsp;asynchronous&nbsp;google&nbsp;analytics:&nbsp;mathiasbynens.be/notes/async-analytics-snippet&nbsp;</div></li>
+<li><div class="src-line"><a name="a98"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;change&nbsp;the&nbsp;UA-XXXXX-X&nbsp;to&nbsp;be&nbsp;your&nbsp;site's&nbsp;ID&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a99"></a>&nbsp;&nbsp;&lt;!--&nbsp;&lt;script&gt;&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a100"></a>&nbsp;&nbsp;&lt;!--&nbsp;&nbsp;var&nbsp;_gaq&nbsp;=&nbsp;[['_setAccount',&nbsp;'UA-XXXXX-X'],&nbsp;['_trackPageview']];&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a101"></a>&nbsp;&nbsp;&lt;!--&nbsp;&nbsp;(function(d,&nbsp;t)&nbsp;{&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a102"></a>&nbsp;&nbsp;&lt;!--&nbsp;&nbsp;&nbsp;var&nbsp;g&nbsp;=&nbsp;d.createElement(t),&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a103"></a>&nbsp;&nbsp;&lt;!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s&nbsp;=&nbsp;d.getElementsByTagName(t)[0];&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a104"></a>&nbsp;&nbsp;&lt;!--&nbsp;&nbsp;&nbsp;g.async&nbsp;=&nbsp;true;&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a105"></a>&nbsp;&nbsp;&lt;!--&nbsp;&nbsp;&nbsp;g.src&nbsp;=&nbsp;('https:'&nbsp;==&nbsp;location.protocol&nbsp;?&nbsp;'https://ssl'&nbsp;:&nbsp;'http://www')&nbsp;+&nbsp;'.google-analytics.com/ga.js';&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a106"></a>&nbsp;&nbsp;&lt;!--&nbsp;&nbsp;&nbsp;s.parentNode.insertBefore(g,&nbsp;s);&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a107"></a>&nbsp;&nbsp;&lt;!--&nbsp;&nbsp;})(document,&nbsp;'script');&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a108"></a>&nbsp;&nbsp;&lt;!--&nbsp;&lt;/script&gt;&nbsp;--&gt;</div></li>
+<li><div class="src-line"><a name="a109"></a>&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a110"></a>&lt;/body&gt;</div></li>
+<li><div class="src-line"><a name="a111"></a>&lt;/html&gt;</div></li>
+</ol>
+</div>
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Thu, 16 Dec 2010 20:55:42 +0000 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

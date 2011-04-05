@@ -1,0 +1,12 @@
+Bookmarkit! - save and edit your bookmarks online.
+
+Developed by Jesse Clark.
+
+This was a learning exercise using the Zend Framework. I had no previous ZF experience before working on this project.
+
+
+Currently you can add, delete, edit bookmarks, and create folders.
+
+Todo: - Rearrange bookmarks
+	  - Add bookmarks from file (from any browsers export bookmarks file)
+

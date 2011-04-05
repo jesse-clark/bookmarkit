@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>File Source for LoggedInAs.php</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">bookmarkit</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                              		  [ <a href="../classtrees_bookmarkit.html" class="menu">class tree: bookmarkit</a> ]
+		  [ <a href="../elementindex_bookmarkit.html" class="menu">index: bookmarkit</a> ]
+		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../li_bookmarkit.html">bookmarkit</a><br />
+            <br /><br />
+                  
+      
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1 align="center">Source for file LoggedInAs.php</h1>
+<p>Documentation is available at <a href="../bookmarkit/_views---helpers---LoggedInAs.php.html">LoggedInAs.php</a></p>
+<div class="src-code">
+<ol><li><div class="src-line"><a name="a1"></a><span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a2"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a3"></a><span class="src-doc">&nbsp;*&nbsp;Purpose:&nbsp;loggedinas&nbsp;builds&nbsp;navigation&nbsp;for&nbsp;every&nbsp;page&nbsp;via&nbsp;layout.phtml</span></div></li>
+<li><div class="src-line"><a name="a4"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a5"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@copyright</span><span class="src-doc">&nbsp;Jesse&nbsp;Clark&nbsp;2010</span></div></li>
+<li><div class="src-line"><a name="a6"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@author</span><span class="src-doc">&nbsp;Jesse&nbsp;Clark&nbsp;&lt;mail@jesseclark.me&gt;</span></div></li>
+<li><div class="src-line"><a name="a7"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@version</span><span class="src-doc">&nbsp;1.0</span></div></li>
+<li><div class="src-line"><a name="a8"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a9"></a><span class="src-key">class&nbsp;</span><a href="../bookmarkit/Zend_View_Helper_LoggedInAs.html">Zend_View_Helper_LoggedInAs</a>&nbsp;<span class="src-key">extends&nbsp;</span><span class="src-id">Zend_View_Helper_Abstract</span></div></li>
+<li><div class="src-line"><a name="a10"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a11"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a12"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;generates&nbsp;navagation&nbsp;depending&nbsp;on&nbsp;page&nbsp;and&nbsp;if&nbsp;a&nbsp;user&nbsp;is&nbsp;logged&nbsp;in</span></div></li>
+<li><div class="src-line"><a name="a13"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a14"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">public&nbsp;</span><span class="src-key">function&nbsp;</span><a href="../bookmarkit/Zend_View_Helper_LoggedInAs.html#methodloggedInAs">loggedInAs</a><span class="src-sym">(</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a15"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a16"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$auth&nbsp;</span>=&nbsp;<span class="src-id">Zend_Auth</span><span class="src-sym">::</span><span class="src-id">getInstance</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a17"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$request&nbsp;</span>=&nbsp;<span class="src-id">Zend_Controller_Front</span><span class="src-sym">::</span><span class="src-id">getInstance</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><span class="src-id">getRequest</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a18"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$controller&nbsp;</span>=&nbsp;<span class="src-var">$request</span><span class="src-sym">-&gt;</span><span class="src-id">getControllerName</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a19"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$action&nbsp;</span>=&nbsp;<span class="src-var">$request</span><span class="src-sym">-&gt;</span><span class="src-id">getActionName</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a20"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a21"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;if&nbsp;the&nbsp;user&nbsp;is&nbsp;logged&nbsp;in,&nbsp;the&nbsp;following&nbsp;will&nbsp;display</span></div></li>
+<li><div class="src-line"><a name="a22"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if</span><span class="src-sym">(</span><span class="src-var">$auth</span><span class="src-sym">-&gt;</span><span class="src-id">hasIdentity</span><span class="src-sym">(</span><span class="src-sym">))&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a23"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$username&nbsp;</span>=&nbsp;<span class="src-var">$auth</span><span class="src-sym">-&gt;</span><span class="src-id">getIdentity</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><span class="src-id">username</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a24"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$logoutUrl&nbsp;</span>=&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-var">view</span><span class="src-sym">-&gt;</span><span class="src-id">url</span><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'controller'</span>=&gt;<span class="src-str">'auth'</span><span class="src-sym">,</span><span class="src-str">'action'</span>=&gt;<span class="src-str">'logout'</span><span class="src-sym">)</span><span class="src-sym">,&nbsp;</span><span class="src-id">null</span><span class="src-sym">,&nbsp;</span><span class="src-id">true</span><span class="src-sym">)</span><span class="src-sym">;</span><span class="src-comm">//url&nbsp;for&nbsp;log&nbsp;out</span></div></li>
+<li><div class="src-line"><a name="a25"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$addUrl&nbsp;</span>=&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-var">view</span><span class="src-sym">-&gt;</span><span class="src-id">url</span><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'controller'</span>=&gt;<span class="src-str">'index'</span><span class="src-sym">,</span><span class="src-str">'action'</span>=&gt;<span class="src-str">'add'</span><span class="src-sym">)</span><span class="src-sym">,</span><span class="src-id">null</span><span class="src-sym">,</span><span class="src-id">true</span><span class="src-sym">)</span><span class="src-sym">;&nbsp;</span><span class="src-comm">//url&nbsp;for&nbsp;main&nbsp;add&nbsp;link/folder&nbsp;action</span></div></li>
+<li><div class="src-line"><a name="a26"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a27"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$return_string&nbsp;</span>=&nbsp;<span class="src-str">'&lt;nav&gt;&lt;ul&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a28"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if</span><span class="src-sym">(</span><span class="src-var">$controller&nbsp;</span>==&nbsp;<span class="src-str">'index'&nbsp;</span>&amp;&amp;&nbsp;<span class="src-var">$action&nbsp;</span>==&nbsp;<span class="src-str">'index'</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{&nbsp;&nbsp;</span><span class="src-comm">//on&nbsp;the&nbsp;main&nbsp;display&nbsp;page&nbsp;add&nbsp;link&nbsp;to&nbsp;add&nbsp;link/folder</span></div></li>
+<li><div class="src-line"><a name="a29"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$return_string&nbsp;</span>.=&nbsp;<span class="src-str">'&lt;li&nbsp;id=&quot;left&quot;&gt;&lt;a&nbsp;href=&quot;'&nbsp;</span>.&nbsp;<span class="src-var">$addUrl&nbsp;</span>.&nbsp;<span class="src-str">'&quot;&gt;Add&nbsp;Link&nbsp;or&nbsp;Folder&nbsp;to&nbsp;page&lt;/a&gt;&lt;/li&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a31"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$return_string&nbsp;</span>.=&nbsp;<span class="src-str">'&lt;li&nbsp;id=&quot;right&quot;&gt;Welcome&nbsp;'&nbsp;</span>.&nbsp;<span class="src-var">$username&nbsp;</span>.&nbsp;<span class="src-str">'.&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a&nbsp;href=&quot;'&nbsp;</span>.&nbsp;<span class="src-var">$logoutUrl&nbsp;</span>.&nbsp;<span class="src-str">'&quot;&gt;logout&lt;/a&gt;&lt;/li&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a32"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$return_string&nbsp;</span>.=&nbsp;<span class="src-str">'&lt;/ul&gt;&lt;/nav&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a33"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><span class="src-var">$return_string</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a34"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a35"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a36"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//if&nbsp;in&nbsp;contoller&nbsp;auth&nbsp;and&nbsp;on&nbsp;index&nbsp;this&nbsp;will&nbsp;be&nbsp;displayed</span></div></li>
+<li><div class="src-line"><a name="a37"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if</span><span class="src-sym">(</span><span class="src-var">$controller&nbsp;</span>==&nbsp;<span class="src-str">'auth'&nbsp;</span>&amp;&amp;&nbsp;<span class="src-var">$action&nbsp;</span>==&nbsp;<span class="src-str">'index'</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a38"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$signupUrl&nbsp;</span>=&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-var">view</span><span class="src-sym">-&gt;</span><span class="src-id">url</span><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'controller'</span>=&gt;<span class="src-str">'auth'</span><span class="src-sym">,</span><span class="src-str">'action'</span>=&gt;<span class="src-str">'signup'</span><span class="src-sym">)</span><span class="src-sym">,</span><span class="src-id">null</span><span class="src-sym">,&nbsp;</span><span class="src-id">true</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a39"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><span class="src-str">'&lt;div&nbsp;id=&quot;center&quot;&gt;&lt;a&nbsp;href=&quot;'</span>.<span class="src-var">$signupUrl</span>.<span class="src-str">'&quot;&gt;Click&nbsp;here&nbsp;to&nbsp;Sign&nbsp;Up!&lt;/a&gt;&lt;/div&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a40"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a41"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a42"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//if&nbsp;in&nbsp;auth&nbsp;and&nbsp;sign&nbsp;up&nbsp;dont&nbsp;display&nbsp;anything</span></div></li>
+<li><div class="src-line"><a name="a43"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if</span><span class="src-sym">(</span><span class="src-var">$controller&nbsp;</span>==&nbsp;<span class="src-str">'auth'&nbsp;</span>&amp;&amp;&nbsp;<span class="src-var">$action&nbsp;</span>==&nbsp;<span class="src-str">'signup'</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a44"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><span class="src-str">''</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a45"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a46"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a47"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//default&nbsp;action</span></div></li>
+<li><div class="src-line"><a name="a48"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$loginUrl&nbsp;</span>=&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-var">view</span><span class="src-sym">-&gt;</span><span class="src-id">url</span><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'controller'</span>=&gt;<span class="src-str">'auth'</span><span class="src-sym">,</span><span class="src-str">'action'</span>=&gt;<span class="src-str">'index'</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a49"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><span class="src-str">'&lt;a&nbsp;href=&quot;'&nbsp;</span>.&nbsp;<span class="src-var">$loginUrl&nbsp;</span>.&nbsp;<span class="src-str">'&quot;&gt;Login&lt;/a&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a50"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a51"></a><span class="src-sym">}</span></div></li>
+</ol>
+</div>
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Thu, 16 Dec 2010 20:55:43 +0000 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

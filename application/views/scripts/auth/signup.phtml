@@ -1,0 +1,19 @@
+<?php
+/**
+ * Purpose: Display signup page form
+ *
+ * @copyright Jesse Clark 2010
+ * @author Jesse Clark <mail@jesseclark.me>
+ * @version 1.0
+ */
+$this->title = '- Sign Up';
+$this->headTitle('Sign up');
+
+$form = $this->form;
+
+if($form != '') {//if form is empty string, signup was a success 
+	echo '<div id="form">',$this->form,'</div>';
+}else {// display successful signup message
+	$loginUrl = Zend_View_Helper_Url::url(array('controller'=>'index','action'=>'index')); 
+	echo '<div id="form">Thank you for signing up!<br /></div><div id="center"><a href="' . $loginUrl . '">Please CLICK HERE to Login.</a></div>';
+}

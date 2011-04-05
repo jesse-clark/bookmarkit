@@ -1,0 +1,25 @@
+<?php
+/**
+ * Purpose: Display delete page form
+ *
+ * @copyright Jesse Clark 2010
+ * @author Jesse Clark <mail@jesseclark.me>
+ * @version 1.0
+ */
+$this->title = '- Delete';
+$this->headTitle('Delete');
+?>
+<br /><br />
+<div id="form">
+Are you sure that you want to delete bookmark? 
+<br />
+<?php echo '"'.$this->escape($this->bookmark['metadata']),'" - ',$this->escape($this->bookmark['link']);?>
+<form action="<?php echo $this->url(array('action'=>'delete'));?>" method="post">
+<div>
+	<input type='hidden' name='link_id' value='<?php echo $this->bookmark['link_id'];?>' />
+	<input type='hidden' name='parent_id' value='<?php echo $this->bookmark['parent_id'];?>' />
+	<input type='submit' name='del' value='yes' />
+	<input type='submit' name='del' value='no' />
+</div>
+</form>
+</div>

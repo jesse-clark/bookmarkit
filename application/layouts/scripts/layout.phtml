@@ -1,0 +1,82 @@
+<?php
+/**
+ * Purpose: layout for webpages, based on html5boilerplate.com
+ *
+ * @copyright Jesse Clark 2010
+ * @author Jesse Clark <mail@jesseclark.me>
+ * @version 1.0
+ */  
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle('Bookmarks');
+?>
+<!doctype html>  
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->  
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- <title></title> -->
+  <?php echo $this->headTitle(); ?> 
+  <meta name="description" content="a bookmark tool">
+  <meta name="author" content="Jesse Clark">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+  <!-- CSS : implied media="all" -->
+  <!-- <link rel="stylesheet" href="css/style.css?v=2"> -->
+  <?php echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/site.css'); ?>
+  <link  href="//fonts.googleapis.com/css?family=Lobster:regular" rel="stylesheet" type="text/css" >
+  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+ 
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-1.6.min.js"></script>
+
+</head>  
+
+
+<body>
+
+  <div id="container">
+    <header>
+     	<h6>
+			<div id='c1'>Bookmarkit!</div>
+			<div id='c1'><?php echo $this->escape($this->title); ?></div>
+		</h6>
+			<?php echo $this->loggedInAs(); ?>
+
+    </header>
+    
+    <div id="main">
+		<?php echo $this->layout()->content;?>   
+    </div>
+    
+    <footer>
+	  <br />
+      Copyright 2010 Jesse Clark
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- Javascript at the bottom for fast page loading -->
+
+  
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+
+</body>
+</html>  
